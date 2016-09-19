@@ -1,0 +1,141 @@
+#book-bags-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-bag {
+  @bag-width: 160px;
+  @bag-height: 240px;
+  @handle-thickness: 20px;
+  @handle-width: 80px;
+
+  margin: 0px 40px 20px 0px;
+  position: relative;
+  width: @bag-width;
+  height: @bag-height;
+  cursor: pointer;
+
+  .handle {
+    position: relative;
+    margin: 0px auto @handle-thickness;
+    width: @handle-width;
+    height: @handle-thickness;
+
+    .handle-left-corner,
+    .handle-right-corner {
+      position: absolute;
+      top: 0px;
+      border: @handle-thickness/2 transparent solid;
+      width: 0px;
+      height: 0px;
+    }
+
+    .handle-left-corner {
+      left: -@handle-thickness;
+    }
+
+    .handle-right-corner {
+      right: -@handle-thickness;
+    }
+
+    .handle-left,
+    .handle-right {
+      position: absolute;
+      top: @handle-thickness;
+      width: @handle-thickness;
+      height: @handle-thickness;
+    }
+
+    .handle-left {
+      left: -@handle-thickness;
+    }
+
+    .handle-right {
+      right: -@handle-thickness;
+    }
+  }
+
+  .base {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: ~"calc(100% - (@{handle-thickness} * 2))";
+
+    span {
+      position: relative;
+      padding: 16px;
+      color: #FFF;
+      font: 36px 'Amatic SC', cursive;
+      text-align: center;
+      outline: none;
+      width: 100%;
+      max-height: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .fa-plus {
+    position: absolute;
+    top: 50%;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    width: 100%;
+    height: 48px;
+  }
+
+  &.add-book-bag-button {
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .book-bag-name-form {
+    @button-height: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: @handle-thickness * 2;
+    width: 100%;
+    height: ~"calc(100% - (@{handle-thickness} * 2))";
+
+    .book-name {
+      padding: 16px;
+      color: #FFF;
+      font: 36px 'Amatic SC', cursive;
+      line-height: 36px;
+      text-align: center;
+      border: none;
+      outline: none;
+      width: 100%;
+      min-height: 36px;
+      max-height: ~"calc(100% - @{button-height})";
+      overflow: scroll;
+      cursor: text;
+    }
+
+    .saved {
+      padding: 4px 0px;
+      position: absolute;
+      bottom: 20px;
+      left: 0px;
+      background: #27AE60;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+#remove-book-bag-button {
+  margin-top: 20px;
+  padding: 8px 0px;
+  background: @red;
+  width: 100%;
+
+  &:hover {
+    background: @dark-red;
+  }
+}

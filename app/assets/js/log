@@ -1,0 +1,475 @@
+commit dd103405632637f04592399048a86fd61638f5be
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 15:10:38 2014 -0500
+
+    1 second delay for Amazon API retries
+
+commit f0bc75098e0dcc12a2b0fd15fea0a6ed76037d2a
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 15:05:08 2014 -0500
+
+    Remove Amazon request retry
+
+commit b01698327fa2292b1a7b88e0e228c6525979ec95
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 14:50:20 2014 -0500
+
+    Help.
+
+commit 3e6b937c56cbdcc8d676e94238af1c3311f99001
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 14:24:50 2014 -0500
+
+    Fixed progress bar.
+
+commit e5dd92ffe9d805066a45629d9f6198ebbc8f2c40
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 14:10:05 2014 -0500
+
+    Changed position of color label and z-index change user over progress bar.
+
+commit 38b1988a1c84ea5b5d782d8a7196cf0ef0dd45fd
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 13:52:07 2014 -0500
+
+    Fixed bug in change user.
+
+commit 3e13fdf8216abafd7b474e4856f932c76b1bbb94
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 13:39:51 2014 -0500
+
+    Help is no longer fixed to the scrollbar.
+
+commit 2ba03a469e67638b66a0ff3acfc133b750321d3e
+Author: Sarah Green <sjaissergreen@gmail.com>
+Date:   Tue Dec 9 13:33:43 2014 -0500
+
+    Slight wording changes
+
+commit 8caa38aee9867904a64640d4b8559f9e4e3115a5
+Author: Sarah Green <sjaissergreen@gmail.com>
+Date:   Tue Dec 9 11:02:49 2014 -0500
+
+    Minor tweaks to cursors and text
+
+commit 2ccad9ec94a2e1482f38995bd9c9e29e9cfa521d
+Author: Sarah Green <sjaissergreen@gmail.com>
+Date:   Tue Dec 9 10:31:21 2014 -0500
+
+    Fixed small UI bugs
+
+commit cb010c5e6014783b04357506f4a9fa815fbadd8c
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 07:49:34 2014 -0500
+
+    Added help page.
+
+commit e04137b8e50e2569d60b9a6fb99375ff649ad421
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 07:40:48 2014 -0500
+
+    Welcome message.
+
+commit dd0002046762a23e72aa1236eae1f5843ef644f0
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 07:31:04 2014 -0500
+
+    Added border around change user.
+
+commit 8e9788709ff58c004986255c74557e9013d78121
+Merge: 1007826 771d87c
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 07:17:41 2014 -0500
+
+    Merge branch 'master' of github.com:kbh2120/BookBags
+
+commit 100782690d91a0b1f9d5dc355ed4062dfafa0cf1
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 07:17:10 2014 -0500
+
+    Add intro text to new user sign in
+
+commit 771d87c57533686b35d333735e0f3d827d2731d6
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 07:15:10 2014 -0500
+
+    Something happened there. I don't remember what.
+
+commit 4dbbca45c8f19840524fd3ee8a3691bcd9bfd837
+Merge: 950139d a9d3cfa
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 07:08:06 2014 -0500
+
+    Merge branch 'master' of https://github.com/kbh2120/BookBags
+
+commit 950139d83b8beafe9cc73d3441ba3612482636ec
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 07:07:54 2014 -0500
+
+    Can remove book bags.
+
+commit 69d8024895e182903a7d8731b246b90931fb0eea
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 06:50:53 2014 -0500
+
+    Change bag name and color.
+
+commit a9d3cfa152af1b606fd1114f741bfc437546e808
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 06:40:49 2014 -0500
+
+    Resend Amazon request in case it gets Throttled
+
+commit ce62c84be9421cc67f5c138da08aad88c5205dba
+Merge: 2db394b b549409
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 06:21:21 2014 -0500
+
+    Merge branch 'master' of github.com:kbh2120/BookBags
+
+commit 2db394b7e194a32c653bf0a9b7d5a13a60ef77df
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 06:20:45 2014 -0500
+
+    Get Amazon URL from API
+
+commit b5494095073c33023837d1a07255619bfa02b1c1
+Merge: 7f1d81a 362480f
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 06:03:55 2014 -0500
+
+    Merge branch 'master' of https://github.com/kbh2120/BookBags
+
+commit 7f1d81a97311bcb8a334a81edaad2b7e0fbc2d0d
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 06:03:48 2014 -0500
+
+    Added dropdown for showing recommendations on homepage.
+
+commit 362480f686880fafdb469af525271dcc255f195c
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 05:51:02 2014 -0500
+
+    Add support for EISBNs; fix recommender bug
+
+commit 619f0838ceb7d90797f875dba520e0563719be6f
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 05:21:28 2014 -0500
+
+    Tried to fetch book. Use for debugging.
+
+commit 4e51d3c968a4f20092677d1cb3fdb9a53cf9317c
+Merge: 72f713e aa76763
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 05:19:09 2014 -0500
+
+    Merge branch 'master' of https://github.com/kbh2120/BookBags
+
+commit 72f713e3f1018474eb7438d12dbab817196fea6d
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 05:19:00 2014 -0500
+
+    Tried to connect recommender.
+
+commit aa76763e553a2e58a5e8ae97ceedc4463fb1ae25
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 05:18:23 2014 -0500
+
+    Make progress bar advance randomly
+
+commit 567bacc7423f912158a887641575452e921d06eb
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 05:13:17 2014 -0500
+
+    Added book bags page.
+
+commit 61d209942a830c4e6d0f725a2d906d6b3080f7d3
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 04:37:46 2014 -0500
+
+    Added add to book bag experience.
+
+commit 6217167be26dcbb96a7fc1ad06e6b822868f12e9
+Merge: 4aefcc2 9ae26d3
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 03:48:58 2014 -0500
+
+    Merge branch 'master' of https://github.com/kbh2120/BookBags
+
+commit 4aefcc2e91000ff9e88d85c40248ca789f453f7e
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 03:48:49 2014 -0500
+
+    The start of something new.
+
+commit aca959a204f4a5e02e5718e8a7b8e6fd203c6a90
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 03:07:23 2014 -0500
+
+    Add to book bag flow so far.
+
+commit 9ae26d35724af4c434452c994083e61ee6e7bc9f
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 02:44:52 2014 -0500
+
+    Remove all code for Goodreads API
+
+commit c2368a257b761656a67f485be074016a6790dbae
+Merge: 0902645 c0288c2
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 02:05:58 2014 -0500
+
+    Merge branch 'amazon_recs'
+
+commit c0288c2ba29d2476dbbaf5ddd02d46b9133b864f
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Dec 9 02:04:15 2014 -0500
+
+    Implement recommendation system using Amazon API
+
+commit 0902645a637f6db79c5c3124a353885ade365c1b
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 01:31:00 2014 -0500
+
+    Not interested and interested.
+
+commit 9ecc87ae98d67f2b630759b8924dbe911d799cf8
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 00:35:36 2014 -0500
+
+    Added flag for bestseller.
+
+commit f4ac2e4d4637200d8236a8c9c7cfad8df078aeb7
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Tue Dec 9 00:17:31 2014 -0500
+
+    Added book reviews.
+
+commit e6813ef8aa5f8f6137b3440377613c4b65a1ca3d
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 23:21:19 2014 -0500
+
+    Users can now add book bags!
+
+commit cc1cb4537969da61d6ae4aee34c08165ceead573
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 21:13:28 2014 -0500
+
+    Change book bag color on hover.
+
+commit 66282534c906bbc2df6ca5d3c2e7a9db1075272a
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 21:00:38 2014 -0500
+
+    Added default book bag to each new user.
+
+commit 179ca275f8b8d1c8e73649de5b3ffc91c098e7a3
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 06:05:11 2014 -0500
+
+    User can now specify books that they are not interested in. Saves to cache and store.js.
+
+commit e094f1e15af64b68e03f59d6458ef4f2d6e30018
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 05:11:48 2014 -0500
+
+    Added small tweak to make more info arrow more centered on book.
+
+commit 8b4fcb815f105b990072b1a3dabce34302879272
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 05:10:03 2014 -0500
+
+    Added description and link to amazon.
+
+commit c1561fa081cc676280f4e54a0f31678c38708e3c
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 04:57:28 2014 -0500
+
+    Added icons for book action buttons. Books are more opaque when the button area is hovered over to show which book you are selecting.
+
+commit 8a0019bb65f3626150b297881256ca457b9e132e
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 04:31:37 2014 -0500
+
+    Title and author of book are now truncated to two lines in tile mode.
+
+commit d99b84a5a7c741ccb3fc0f864b927998d163d99b
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 04:05:34 2014 -0500
+
+    Added dropdown section for more info for books.
+
+commit 6246d5e6bc75e230583c82a63d5d876ce99db55e
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 03:23:52 2014 -0500
+
+    Added responsive layout for books. Bestseller list tiles are also now responsive using media queries.
+
+commit 38bf1324700b1f0afe142c87ae47be59eadc5b23
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Dec 8 01:54:05 2014 -0500
+
+    Can add users and switch between users.
+
+commit 5e1db04a2fb921b931b12a53e7e988c9ebdb71da
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sun Dec 7 02:37:14 2014 -0500
+
+    Added user login experience. May have broken some other things in the process.
+
+commit aceaeafc877644e25deb362a0d3550310b2f326f
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 20:40:31 2014 -0500
+
+    Shows way of turning for loop into a recursive function.
+
+commit f3915b515838ac9ebdc0dc05ec72e80f73cd3383
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 20:15:53 2014 -0500
+
+    Purple favicon!
+
+commit 1d35c973ec80b7cf7b36774ef57f629f7eb613f3
+Author: Sarah Green <sjaissergreen@gmail.com>
+Date:   Sat Dec 6 20:12:50 2014 -0500
+
+    Added favicon.
+
+commit 92df4c89d2a95ef26e82a3880ff901bc0145012a
+Merge: 6906e50 264d382
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 19:46:41 2014 -0500
+
+    Merge branch 'master' of https://github.com/kbh2120/BookBags
+
+commit 6906e50b0740ad364f9c33a81b54beb72060e4a1
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 19:46:28 2014 -0500
+
+    More styling.
+
+commit 5a9b26e19274040beb6867238f143dfc3beeb9e9
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 19:36:52 2014 -0500
+
+    Changed layout. Purple background.
+
+commit 264d3820ba2604f25ed3631f19e67d84f8d80cd2
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Sat Dec 6 17:39:04 2014 -0500
+
+    Implement rudimentary recommendation engine
+
+commit 3a33b58e8462a20b0cdf03d53e9fe06cb2f4d9b6
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 06:23:37 2014 -0500
+
+    Added skeleton for bestseller list page.
+
+commit f1daeb4d46155d1e83d64de90752b9d0f61a3f65
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 03:58:05 2014 -0500
+
+    Added transitions and hash for changing pages.
+
+commit 1e332304074e7438797e892ca938bd0c4246cf33
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 03:06:30 2014 -0500
+
+    Styling.
+
+commit fd2da6ad3b06b52ae05e5ab92d2a5cb80347e6bf
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 02:54:13 2014 -0500
+
+    Created dashboard page rendering.
+
+commit 8a085a4ad611b1f514e808e92686babf5a7d7366
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sat Dec 6 01:37:25 2014 -0500
+
+    Bestseller lists are now processed so that they have one display name and multiple encoded names to account for the hardcover, paperback, e-book, etc. lists.
+
+commit 19b99f255cf4ce2bf363845ee3ba7314f37b9dbc
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Mon Dec 1 16:16:09 2014 -0500
+
+    Create high-level outline of recommender system
+
+commit a75e241548f07ea7deb777aa3fa6de2c957ee80e
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Sun Nov 30 20:34:12 2014 -0500
+
+    Got the Amazon Product API to work using Yahoo CORS.
+
+commit 2a630af58283f48bf07b5b40e30911a872debca5
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Sun Nov 30 22:29:51 2014 +0000
+
+    Write script for testing access to Amazon API
+
+commit 54894639f136ade3a78372505aecdaa0e89feefd
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 22:37:03 2014 -0500
+
+    Added book bags with HTML rendering of the book bag which is editable.
+
+commit 240fac51ba2eae87700f36091ceddbc68c94b575
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 05:52:04 2014 -0500
+
+    Added a way to get books from a bestsellers list and add it to cache.
+
+commit 0a8319003548d147e7d9446a4d98a16b001350a8
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 05:13:10 2014 -0500
+
+    We get all the bestseller lists now and the lists are added to cache so that the next time the API is called again, it first checks the cache before making the ajax call.
+
+commit 2276893bb83605281da4d7c9b87de04bd0277926
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 04:28:59 2014 -0500
+
+    Added a function to get monthly bestseller lists from the New York Times Books API. Also added a progress bar.
+
+commit 7d3bef57262d94d20cf28f1b15537405f9208eda
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 03:36:44 2014 -0500
+
+    Added LESS and Autoprefixer NodeJS workflow.
+
+commit 7eab6e5140dc0da1a2c84c2fc857f86b6077ec04
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 03:21:54 2014 -0500
+
+    Changed README.md
+
+commit 5a0cb5ba0d5ab29f4f632ccb4f6d2ece40e20340
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Thu Nov 27 03:19:45 2014 -0500
+
+    Moved README.txt to README.md
+
+commit b33d6b89a572c4262795ff7e607589c4006b5552
+Author: Tom Segarra <tas2172@columbia.edu>
+Date:   Tue Nov 25 01:08:41 2014 +0000
+
+    Boldly reimagining the README
+
+commit f4e07e5ecf4ba2b61d4c53c9e3cc5cf1d2f35691
+Author: Sarah Green <sjaissergreen@gmail.com>
+Date:   Mon Nov 24 20:00:05 2014 -0500
+
+    Updated README.txt
+
+commit 6a45be85ef851673d0b55d516e9f38add66f5a2d
+Author: Lauren Zou <zou.lauren@gmail.com>
+Date:   Mon Nov 24 19:57:43 2014 -0500
+
+    Hello World
+
+commit 8e57faa57855f46fc876ceaddee9d328905e0efb
+Author: Kristie Howard <kbh2120@columbia.edu>
+Date:   Mon Nov 24 19:50:20 2014 -0500
+
+    Adding readme... LETS GOOOO

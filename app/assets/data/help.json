@@ -1,0 +1,36 @@
+{
+  "help": [
+  {
+    "question" : "What is Book Bags?",
+    "answer" : "Book Bags is a web application for you to create lists of books (\"Book Bags\"), which we analyze in order to recommend similar books you might enjoy. We start you off with New York Times Bestsellers, and highlight Bestsellers among our recommendations."
+  },
+  {
+    "question" : "How do I create a Book Bag?",
+    "answer": "Navigate to your dashboard, and click the gray icon of a bag with a plus sign. Then type in the name of your new Book Bag."
+  },
+  {
+    "question" : "How do I delete a Book Bag?",
+    "answer": "Select a Book Bag from your dashboard, and click the red \"Delete Book Bag\" button at the bottom. You will be prompted to click the button again to confirm the delete."
+  },
+  {
+    "question" : "How do I add books to a Book Bag?",
+    "answer": "To get started, explore the New York Times Bestsellers listed by category on your dashboard. Click a category to look at those books. Then click a red \"Add to Book Bag\" button to add that book to one or more Book Bags."
+  },
+  {
+    "question" : "Where are my recommendations?",
+    "answer": "Before you can get recommendations, be sure to add some books to a Book Bag. Then click into that Book Bag from the dashboard to view recommendations based on that Book Bag. You can also see recommendations on the dashboard, by choosing a Book Bag in the drop down list next to \"Show recommendations based on:\"."
+  },
+  {
+    "question" : "What does “Not Interested” mean?",
+    "answer": "If you mark a book \"Not Interested,\" it will fade into the background, so you can focus instead on books you might be interested in. If you change your mind about a \"Not Interested\" book, just click the \"Interested\" button."
+  },
+  {
+    "question" : "How are my recommendations generated?",
+    "answer": "Our algorithm takes into account the books you have added to a Book Bag, and finds other related books. They might be by the same author, from the same genre, etc."
+  },
+  {
+    "question" : "What are profiles?",
+    "answer": "If you are sharing your Book Bags account with someone else, you can each create your own profile. That way, your Book Bags and recommendations are neatly separated between your profiles."
+  }
+  ]
+}

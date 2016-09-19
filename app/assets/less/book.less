@@ -1,0 +1,399 @@
+@book-margin: 40px;
+@book-height: 180px;
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  @ribbon-color: @orange;
+  @ribbon-height: 20px;
+
+  display: flex;
+  margin: 0px @book-margin @book-margin 0px;
+  position: relative;
+  opacity: 0.8;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.disabled {
+    opacity: 0.2;
+
+    .buttons-section {
+      .add-to-book-bag-button,
+      .more-info-button {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .cover {
+    z-index: 10;
+    display: flex;
+    flex-shrink: 0;
+    margin-right: 16px;
+    max-width: @book-height * 5/7;
+    height: @book-height;
+    cursor: pointer;
+  }
+
+  .bestseller-ribbon {
+    z-index: 20;
+    padding: 0px 4px;
+    position: absolute;
+    top: 1px;
+    left: -2px;
+    background: @ribbon-color;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: @ribbon-height;
+    height: @ribbon-height;
+    transform: rotate(-45deg);
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0px;
+      border: @ribbon-height/2 transparent solid;
+      width: 0px;
+      height: 0px;
+    }
+
+    &:before {
+      left: -@ribbon-height;
+      border-bottom-color: @ribbon-color;
+      border-right-color: @ribbon-color;
+    }
+
+    &:after {
+      right: -@ribbon-height;
+      border-left-color: @ribbon-color;
+      border-bottom-color: @ribbon-color;
+    }
+  }
+
+  .bestseller-ribbon-shadow {
+    position: absolute;
+    top: -6px;
+    left: -5px;
+    border: 24px transparent solid;
+    border-bottom-color: darken(@ribbon-color, 20%);
+    border-right-color: darken(@ribbon-color, 20%);
+    width: 0px;
+    height: 0px;
+  }
+
+  .info {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: @book-height;
+
+    .title {
+      cursor: default;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-bottom: 4px;
+      font-weight: bold;
+    }
+
+    .author {
+      cursor: default;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    .spacer {
+      flex-grow: 1;
+      flex-shrink: 1;
+      position: relative;
+    }
+
+    section {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    button {
+      display: block;
+      margin-top: 8px;
+      padding: 4px 8px;
+      color: fade(@fg-color, 80%);
+      text-align: left;
+      width: 100%;
+
+      &.add-to-book-bag-button {
+        background: fade(@dark-red, 60%);
+
+        &:hover {
+          background: fade(@dark-red, 80%);
+        }
+      }
+
+      &.not-interested-button {
+        background: fade(@dark-purple, 60%);
+
+        &:hover {
+          background: fade(@dark-purple, 80%);
+        }
+      }
+
+      &.more-info-button {
+        background: fade(@dark-blue, 60%);
+
+        &.active,
+        &:hover {
+          background: fade(@dark-blue, 80%);
+        }
+      }
+
+      i {
+        padding-right: 4px;
+      }
+    }
+  }
+}
+
+.book-review {
+  margin-top: 20px;
+
+  .byline {
+    font-weight: bold;
+
+    &:before {
+      content: 'REVIEW: ';
+    }
+  }
+
+  .summary {
+    a {
+      color: lighten(@purple, 20%);
+
+      &:hover {
+        color: @purple;
+      }
+    }
+  }
+}
+
+.more-info {
+  @color: darken(@bg-color, 10%);
+  margin: -20px 0px 20px;
+  padding: 0px 20px;
+  position: relative;
+  background: @color;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.2s linear 0s;
+
+  &:before {
+    @arrow-height: 10px;
+    content: '';
+    display: block;
+    margin-left: -@arrow-height;
+    position: absolute;
+    top: -@arrow-height*2;
+    border: @arrow-height transparent solid;
+    border-bottom-color: @color;
+    width: 0px;
+    height: 0px;
+  }
+
+  &.show {
+    padding: 20px;
+    height: auto;
+    min-height: 120px;
+    overflow: visible;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .description {
+    padding-top: 8px;
+  }
+
+  .amazon-button {
+    float: right;
+    margin-top: 8px;
+    padding: 4px 8px;
+    background: fade(@dark-blue, 80%);
+
+    &:hover {
+      background: fade(@dark-blue, 100%);
+    }
+  }
+}
+
+.add-to-book-bag-chooser {
+  z-index: 2000;
+  list-style: none;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background: @red;
+  width: 100%;
+
+  li {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+
+    &:hover {
+      background: @dark-red;
+    }
+
+    p {
+      display: block;
+      padding: 0px 38px 0px 8px;
+      color: fade(@fg-color, 80%);
+      text-overflow: ellipsis;
+      line-height: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+
+    i {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      text-align: center;
+      line-height: 30px;
+      width: 30px;
+      height: 100%;
+      opacity: 0;
+    }
+
+    &:hover {
+      p {
+        color: @fg-color;
+      }
+
+      i {
+        opacity: 0.5;
+      }
+    }
+
+    &.active {
+      p {
+        color: @fg-color;
+      }
+
+      i {
+        opacity: 1;
+      }
+    }
+  }
+
+  .add-new-book-bag-li {
+    padding: 0px;
+    position: relative;
+
+    input {
+      padding: 4px 38px 4px 8px;
+      background: transparent;
+      width: 100%;
+      height: 100%;
+
+      &:focus {
+        background: @dark-red;
+      }
+    }
+
+    button {
+      margin: 0px;
+      padding: 0px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background: @dark-red;
+      text-align: center;
+      width: 30px;
+      height: 100%;
+
+      i {
+        position: relative;
+        padding: 0px !important;
+        width: auto;
+        height: auto;
+        opacity: 1;
+      }
+
+      &:hover {
+        background: darken(@dark-red, 5%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1801px) {
+  .book {
+    width: ~"calc((100% - @{book-margin} * 2) / 3)";
+
+    &:nth-of-type(3n) {
+      margin-right: 0px;
+    }
+  }
+
+  .more-info {
+    &:nth-of-type(3n):before {
+      left: ~"calc((100% - @{book-margin} * 2) / 3 * 2 + @{book-margin}*2 + @{book-height}*3/9)";
+    }
+
+    &:nth-of-type(3n + 2):before {
+      left: ~"calc((100% - @{book-margin} * 2) / 3 + @{book-margin} + @{book-height}*3/9)";
+    }
+
+    &:nth-of-type(3n + 1):before {
+      left: ~"calc(@{book-height}*3/9)";
+    }
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 1800px) {
+  .book {
+    width: ~"calc((100% - @{book-margin}) / 2)";
+
+    &:nth-of-type(2n) {
+      margin-right: 0px;
+    }
+  }
+
+  .more-info {
+    &:nth-of-type(2n):before {
+      left: ~"calc((100% - @{book-margin}) / 2 + @{book-margin} + @{book-height}*3/9)";
+    }
+
+    &:nth-of-type(2n + 1):before {
+      left: ~"calc(@{book-height}*3/9)";
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .book {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .more-info:before {
+    left: ~"calc(@{book-height}*3/9)";
+  }
+}

@@ -1,0 +1,30 @@
+.question {
+  cursor: pointer;
+  opacity: 0.8;
+
+  i {
+    padding-right: 8px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &+.answer {
+    padding: 0px 0px 0px 23px;
+    line-height: 1.5;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.1s linear 0s;
+  }
+
+  &.expanded {
+    opacity: 1;
+
+    &+.answer {
+      padding-top: 8px;
+      padding-bottom: 20px;
+      height: auto;
+    }
+  }
+}
