@@ -1,14 +1,15 @@
 # BooksBags
 
+Final Group Project
 User Interface Design (COMS W4170)
 Columbia University
 
 ## Group Members
 
-* Lauren Zou (ljz2112)
-* Kristie Howard (kbh2120)
-* Sarah Green (stg2117)
-* Tom Segarra (tas2172)
+* Lauren Zou 
+* Kristie Howard 
+* Sarah Green 
+* Tom Segarra 
 
 ## Development
 
